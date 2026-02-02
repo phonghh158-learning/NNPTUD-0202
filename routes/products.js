@@ -1451,7 +1451,7 @@ router.get('/', function (req, res, next) {
 });
 
 //GET by Id
-router.get('/products/:id', function (req, res, next) {
+router.get('/:id', function (req, res, next) {
     const id = parseInt(req.params.id);
     const product = data.find((item) => item.id === id);
 
